@@ -17,15 +17,12 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: 'Guides',
+          label: 'Coleções',
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: 'Example Guide', slug: 'guides/example' }
+            { label: 'Resumo', slug: 'collections/overview' },
+            { label: 'Pessoas', slug: 'collections/persons' }
           ]
-        },
-        {
-          label: 'Reference',
-          autogenerate: { directory: 'reference' }
         }
       ],
       customCss: ['./src/styles/global.css']

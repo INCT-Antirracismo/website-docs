@@ -1,0 +1,169 @@
+---
+title: Pessoas
+description: Pessoas que façam parte da caminhada do INCT Antirracismo e/ou precisem aparecer no site por algum motivo. Podem ser pesquisadores, colaboradores, convidados de eventos, etc.
+hero:
+  tagline: Pessoas que façam parte da caminhada do INCT Antirracismo e/ou precisem aparecer no site por algum motivo. Podem ser pesquisadores, colaboradores, convidados de eventos, etc.
+---
+
+## Campos
+
+<p className="text-xs">Última atualização: 13/01/2025.</p>
+
+<div>
+  <table className="[&_td]:p-1.5 [&_th]:p-1.5">
+    <tr className="bg-accent-100">
+      <th>Nome do campo</th>
+      <th>Slug</th>
+      <th>Tipo</th>
+      <th>Descrição</th>
+    </tr>
+    <tr>
+      <td className="font-bold">Nome</td>
+      <td>name</td>
+      <td>Texto</td>
+      <td>Nome da pessoa.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Slug</td>
+      <td>slug</td>
+      <td>Texto</td>
+      <td>
+        A slug é uma versão do "Nome" somente em letras minúsculas e sem
+        caracteres especiais. Ela é usada como identificador único do conteúdo
+        legível para humanos, principalmente para a construção de URLs.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Pronomes</td>
+      <td>pronoums</td>
+      <td>Enum: 'Masculino', 'Feminino', 'Neutro'</td>
+      <td>
+        Pronome de tratamento preferido pela pessoa. Pode ser usado para adequar
+        textos gerados por código.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Descrição</td>
+      <td>description</td>
+      <td>Texto</td>
+      <td>Descrição curta da pessoa, para aparecer em cards.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Foto</td>
+      <td>image</td>
+      <td>[Documento de Mídia](/collections/media)</td>
+      <td>
+        Imagem de perfil. Referência a um documento do tipo
+        [Mídia](/collections/media).
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">E-mail</td>
+      <td>email</td>
+      <td>Email</td>
+      <td>E-mail de contato.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">URL do Lattes</td>
+      <td>url</td>
+      <td>Texto</td>
+      <td>
+        Link para a página do Lattes. (Ex.:
+        http://lattes.cnpq.br/7444449891704854)
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Redes Sociais</td>
+      <td>socialMedia</td>
+      <td>Array</td>
+      <td>
+        Contas da pessoa em Redes Sociais, que ela queira tornar pública no site
+        do INCT.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Redes Sociais: URL</td>
+      <td>socialMedia. url</td>
+      <td>Texto</td>
+      <td>Link para a página da conta na rede social.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Redes Sociais: Rede</td>
+      <td>socialMedia. type</td>
+      <td>Select (Texto)</td>
+      <td>Qual a rede social? Instagram, Facebook, Linkedin, etc...</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Sobre</td>
+      <td>body</td>
+      <td>[RichText](/topics/rich-text)</td>
+      <td>
+        Conteúdo sobre a pessoa. Aqui pode vir um texto mais longo e conteúdos
+        que não estejam contemplados por outros campos.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Vínculos com o INCT Antirracismo</td>
+      <td>inctPosition</td>
+      <td>[Termos Definidos: occupation](/collections/definedTerms)</td>
+      <td>
+        Qual a posição dentro da estrutura deste INCT? Admite mais de um valor.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Núcleo no INCT</td>
+      <td>inctGroup</td>
+      <td>[Termos Definidos: inctGroup](/collections/definedTerms)</td>
+      <td>
+        A quais núcleos do INCT essa pessoa pertence. Admite mais de um valor.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Projetos de Pesquisa</td>
+      <td>researchProjects</td>
+      <td>Array</td>
+      <td>Os projetos de pesquisa aos quais a pessoa está vinculada.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Projetos de Pesquisa: Vínculo</td>
+      <td>researchProjects. relationType</td>
+      <td>[Termos Definidos: occupation](/collections/definedTerms)</td>
+      <td>
+        Qual o vínculo da pessoa com o projeto de pesquisa? Pode ter mais de um
+        valor.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Projetos de Pesquisa: Projeto de Pesquisa</td>
+      <td>researchProjects. researchProject</td>
+      <td>[Projeto de Pesquisa](/topics/researchProjects)</td>
+      <td>
+        Referência ao documento do [Projeto de
+        Pesquisa](/topics/researchProjects).
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Vínculos com outras instituições</td>
+      <td>relations</td>
+      <td>Array</td>
+      <td>
+        Quais são os principais vínculos dessa pessoa com outras instituições
+        além do INCT?
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Vínculos com outras instituições: Vínculo</td>
+      <td>relations. relationType</td>
+      <td>[Termos Definidos: occupation](/collections/definedTerms)</td>
+      <td>Natureza do vínculo. Admite mais de um valor.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">
+        Vínculos com outras instituições: Organização
+      </td>
+      <td>relations. researchProject</td>
+      <td>[Organização](/topics/organizations)</td>
+      <td>Referência a um documento de [Organização](/topics/organizations)</td>
+    </tr>
+  </table>
+</div>
