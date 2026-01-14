@@ -1,0 +1,101 @@
+---
+title: Organizações
+description: Organizações que por qualquer motivo precisem ser listadas no site.
+hero:
+  tagline: Organizações que por qualquer motivo precisem ser listadas no site. Grupos de pesquisa, Universidades, Departamentos, Órgãos de Fomento, Programas de Pós-graduação...
+---
+
+## Campos
+
+<p className="text-xs">Última atualização: 14/01/2025.</p>
+
+<div>
+  <table className="[&_td]:p-1.5 [&_th]:p-1.5">
+    <tr className="bg-accent-100">
+      <th>Nome do campo</th>
+      <th>Slug</th>
+      <th>Tipo</th>
+      <th>Descrição</th>
+    </tr>
+    <tr>
+      <td className="font-bold">Slug</td>
+      <td>slug</td>
+      <td>Texto</td>
+      <td>
+        A slug é uma versão do "Nome" somente em letras minúsculas e sem
+        caracteres especiais. Ela é usada como identificador único do conteúdo
+        legível para humanos, principalmente para a construção de URLs.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Nome</td>
+      <td>name</td>
+      <td>Texto</td>
+      <td>
+        O nome completo da organização. Ex.: Conselho Nacional de
+        Desenvolvimento Científico e Tecnológico
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Sigla / Abreviação</td>
+      <td>acronym</td>
+      <td>Texto</td>
+      <td>Abreviação para o nome da organização. Ex.: CNPq</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Descrição</td>
+      <td>description</td>
+      <td>Texto</td>
+      <td>Descrição curta da organização, para aparecer em cards.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Tipo de organização</td>
+      <td>type</td>
+      <td>[Termos Definidos: organizationType](/collections/definedterms)</td>
+      <td>
+        Do que se trata essa organização? Valores como: Universidade ou
+        Faculdade, Departamento, Programa de Pós-Graduação, etc.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Logo</td>
+      <td>logo</td>
+      <td>[Documento de Mídia](/collections/media)</td>
+      <td>
+        Logo da instituição. Referência a um documento do tipo
+        [Mídia](/collections/media). Sempre arquivos .png sem fundo ou então
+        versões com fundo branco.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Site / Link</td>
+      <td>url</td>
+      <td>Texto</td>
+      <td>Site oficial da organização.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Faz parte de:</td>
+      <td>memberOf</td>
+      <td>[Organização](/topics/organization)</td>
+      <td>
+        Utilize esse campo caso a organização seja parte de uma instituição
+        maior, como ao adicionar um departamento de uma faculdade. Uma
+        faculdade, por sua vez, pode ser parte de uma universidade.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Localização</td>
+      <td>geo</td>
+      <td>Point</td>
+      <td>
+        Latitude a longitude. Há um mapa e busca do Google Places para ajudar.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Endereço</td>
+      <td>address</td>
+      <td>Texto</td>
+      <td>Endereço completo da organização.</td>
+    </tr>
+  </table>
+</div>

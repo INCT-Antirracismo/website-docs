@@ -17,11 +17,21 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: 'Coleções',
+          label: 'Tipos de Conteúdo',
           items: [
-            // Each item here is one entry in the navigation menu.
+            // Each item here is one entry in the navigation menu. organizations
             { label: 'Resumo', slug: 'collections/overview' },
-            { label: 'Pessoas', slug: 'collections/persons' }
+            { label: 'Organizações', slug: 'collections/organizations' },
+            { label: 'Pessoas', slug: 'collections/persons' },
+            {
+              label: 'Projetos de Pesquisa',
+              slug: 'collections/researchprojects'
+            },
+            {
+              label: 'Publicações',
+              slug: 'collections/publications'
+            },
+            { label: 'Dicionário de Termos', slug: 'collections/definedterms' }
           ]
         }
       ],
