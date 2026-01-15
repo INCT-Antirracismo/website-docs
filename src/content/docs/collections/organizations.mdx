@@ -1,16 +1,24 @@
 ---
 title: Organizações
 description: Organizações que por qualquer motivo precisem ser listadas no site.
-hero:
-  tagline: Organizações que por qualquer motivo precisem ser listadas no site. Grupos de pesquisa, Universidades, Departamentos, Órgãos de Fomento, Programas de Pós-graduação...
 ---
+
+Organizações que por qualquer motivo precisem ser listadas no site. Grupos de pesquisa, Universidades, Departamentos, Órgãos de Fomento, Programas de Pós-graduação...
+
+## URLs
+
+A princípio, as organizações não vão ter URL própria no site do INCT.
+
+~As organizações têm em sua url o texto `/organizacoes`, seguido da `slug` da organização.:~
+
+~`enderecodosite.com.br/organizacoes/[slug]`~
 
 ## Campos
 
 <p className="text-xs">Última atualização: 14/01/2025.</p>
 
 <div>
-  <table className="[&_td]:p-1.5 [&_th]:p-1.5">
+  <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
     <tr className="bg-accent-100">
       <th>Nome do campo</th>
       <th>Slug</th>
@@ -84,18 +92,18 @@ hero:
       </td>
     </tr>
     <tr>
+      <td className="font-bold">Endereço</td>
+      <td>address</td>
+      <td>Texto</td>
+      <td>Endereço completo da organização.</td>
+    </tr>
+    <tr>
       <td className="font-bold">Localização</td>
       <td>geo</td>
       <td>Point</td>
       <td>
         Latitude a longitude. Há um mapa e busca do Google Places para ajudar.
       </td>
-    </tr>
-    <tr>
-      <td className="font-bold">Endereço</td>
-      <td>address</td>
-      <td>Texto</td>
-      <td>Endereço completo da organização.</td>
     </tr>
   </table>
 </div>

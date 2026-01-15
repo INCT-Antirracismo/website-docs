@@ -1,16 +1,22 @@
 ---
 title: Projetos de Pesquisa
 description: Projetos de pesquisa do INCT.
-hero:
-  tagline: Projetos de pesquisa do INCT.
 ---
+
+Projetos de pesquisa do INCT.
+
+## URLs
+
+Os projetos de pesquisa tem em sua url o texto `/projetos-de-pesquisa`, seguido da `slug` do projeto.:
+
+`enderecodosite.com.br/projetos-de-pesquisa/[slug]`
 
 ## Campos
 
 <p className="text-xs">Última atualização: 14/01/2025.</p>
 
 <div>
-  <table className="[&_td]:p-1.5 [&_th]:p-1.5">
+  <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
     <tr className="bg-accent-100">
       <th>Nome do campo</th>
       <th>Slug</th>
@@ -65,7 +71,7 @@ hero:
     <tr>
       <td className="font-bold">Organizações Envolvidas</td>
       <td>relations</td>
-      <td>\{ relationType: Texto, relationTo: [Organização](/collections/persons) }[]</td>
+      <td>\{ relationType: Texto, relationTo: [Organização](/collections/organizations) }[]</td>
       <td>
         Organizações que tenham envolvimento com o projeto de pesquisa, como departamentos ou financiadores.
       </td>

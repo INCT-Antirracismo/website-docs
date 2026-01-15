@@ -1,0 +1,61 @@
+---
+title: Páginas
+description: Páginas do site do INCT.
+---
+
+Páginas são o formato de conteúdo mais genérico do site, não tem estrutura própria definida no front-end. Elas têm um campo de `Conteúdo` onde é possível adicionar diversos tipos de [Blocos](/blocks/overview). Os blocos podem ser CTAs, formulários de Newsletter, trechos de RichText, listas de conteúdos, etc, estruturando uma página única para tratar de qualquer assunto.
+
+## URLs
+
+As páginas ocupam o primeiro grau na hierarquia das URLs:
+
+`enderecodosite.com.br/[slug]`
+
+## Campos
+
+<p className="text-xs">Última atualização: 15/01/2025.</p>
+
+<div>
+  <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
+    <tr className="bg-accent-100">
+      <th>Nome do campo</th>
+      <th>Slug</th>
+      <th>Tipo</th>
+      <th>Descrição</th>
+    </tr>
+    <tr>
+      <td className="font-bold">Slug</td>
+      <td>slug</td>
+      <td>Texto</td>
+      <td>
+        A slug é uma versão do "Nome" somente em letras minúsculas e sem
+        caracteres especiais. Ela é usada como identificador único do conteúdo
+        legível para humanos, principalmente para a construção de URLs.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Nome</td>
+      <td>name</td>
+      <td>Texto</td>
+      <td>Título da publicação.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Descrição</td>
+      <td>description</td>
+      <td>Texto</td>
+      <td>Descrição curta da publicação para aparecer em cards.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Imagem para SEO</td>
+      <td>image</td>
+      <td>[Mídia](/collections/media)</td>
+      <td>Imagem de capa da publicação para exibição no site.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Conteúdo</td>
+      <td>content</td>
+      <td>[Blocos](/blocks/overview)</td>
+      <td>Descrição mais detalhada da publicação.</td>
+    </tr>
+  </table>
+</div>

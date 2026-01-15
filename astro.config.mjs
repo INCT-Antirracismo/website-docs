@@ -21,16 +21,43 @@ export default defineConfig({
           items: [
             // Each item here is one entry in the navigation menu. organizations
             { label: 'Resumo', slug: 'collections/overview' },
-            { label: 'Organizações', slug: 'collections/organizations' },
-            { label: 'Pessoas', slug: 'collections/persons' },
             {
-              label: 'Projetos de Pesquisa',
-              slug: 'collections/researchprojects'
+              label: 'Institucional',
+              items: [
+                { label: 'Organizações', slug: 'collections/organizations' },
+                { label: 'Pessoas', slug: 'collections/persons' },
+                {
+                  label: 'Projetos de Pesquisa',
+                  slug: 'collections/researchprojects'
+                },
+                {
+                  label: 'Publicações',
+                  slug: 'collections/publications'
+                }
+              ]
             },
             {
-              label: 'Publicações',
-              slug: 'collections/publications'
+              label: 'Website',
+              items: [
+                { label: 'Páginas', slug: 'collections/pages' },
+                { label: 'Posts', slug: 'collections/posts' },
+                { label: 'Eventos', slug: 'collections/events' }
+              ]
             },
+            {
+              label: 'Arquivos',
+              items: [
+                {
+                  label: 'Mídia',
+                  slug: 'collections/media'
+                },
+                {
+                  label: 'Arquivos',
+                  slug: 'collections/files'
+                }
+              ]
+            },
+
             { label: 'Dicionário de Termos', slug: 'collections/definedterms' }
           ]
         }

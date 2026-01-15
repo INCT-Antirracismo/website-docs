@@ -1,16 +1,22 @@
 ---
 title: Publicações
 description: Publicações do INCT.
-hero:
-  tagline: Produção acadêmica. Artigos, monografias, teses, livros, etc...
 ---
+
+Produção acadêmica. Artigos, monografias, teses, livros, etc...
+
+## URLs
+
+As publicações tem em sua url o texto `/publicacoes`, seguido da data de publicação em formato YYYY-MM, seguido da `slug` da publicação.:
+
+`enderecodosite.com.br/publicacoes/YYYY-MM/[slug]`
 
 ## Campos
 
 <p className="text-xs">Última atualização: 14/01/2025.</p>
 
 <div>
-  <table className="[&_td]:p-1.5 [&_th]:p-1.5">
+  <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
     <tr className="bg-accent-100">
       <th>Nome do campo</th>
       <th>Slug</th>
@@ -46,20 +52,26 @@ hero:
       <td>Do que se trata essa publicação?</td>
     </tr>
     <tr>
+      <td className="font-bold">Data de Publicação</td>
+      <td>datePublished</td>
+      <td>Date</td>
+      <td>Data de publicação. Será exibido apenas o mês e ano.</td>
+    </tr>
+    <tr>
       <td className="font-bold">Imagem de Capa</td>
-      <td>Image</td>
+      <td>image</td>
       <td>[Mídia](/collections/media)</td>
       <td>Imagem de capa da publicação para exibição no site.</td>
     </tr>
     <tr>
-      <td className="font-bold">Arquivo</td>
-      <td>file</td>
+      <td className="font-bold">Arquivos</td>
+      <td>files</td>
       <td>[Arquivo](/collections/files)</td>
-      <td>Arquivo da publicação</td>
+      <td>Arquivos da publicação.</td>
     </tr>
     <tr>
       <td className="font-bold">Autorias (INCT)</td>
-      <td>authors</td>
+      <td>author</td>
       <td>\{ relationType: Texto, relationTo: [Pessoas](/collections/persons) }[]</td>
       <td>
         Pessoas do INCT, com cadastro no site, que trabalharam nesta publicação.
@@ -67,7 +79,7 @@ hero:
     </tr>
     <tr>
       <td className="font-bold">Demais Autorias</td>
-      <td>otherAuthors</td>
+      <td>creditText</td>
       <td>Texto</td>
       <td>
         Demais autorias da publicação.

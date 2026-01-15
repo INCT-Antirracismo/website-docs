@@ -1,0 +1,84 @@
+---
+title: Posts
+description: Posts do site do INCT.
+---
+
+Posts são comunicações com o público, registros de eventos, textps de opinião, podcasts... são todo o conteúdo produzido pelo INCT que não se enquadre em [Publicações](collections/publications).
+
+## URLs
+
+Os posts tem em sua url o texto `/novidades`, seguido da data original de publicação em formato ISO Date (YYYY-MM-DD), seguido da `slug` do post.:
+
+`enderecodosite.com.br/novidades/YYYY-MM-DD/[slug]`
+
+## Campos
+
+<p className="text-xs">Última atualização: 15/01/2025.</p>
+
+<div>
+  <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
+    <tr className="bg-accent-100">
+      <th>Nome do campo</th>
+      <th>Slug</th>
+      <th>Tipo</th>
+      <th>Descrição</th>
+    </tr>
+    <tr>
+      <td className="font-bold">Slug</td>
+      <td>slug</td>
+      <td>Texto</td>
+      <td>
+        A slug é uma versão do "Nome" somente em letras minúsculas e sem
+        caracteres especiais. Ela é usada como identificador único do conteúdo
+        legível para humanos, principalmente para a construção de URLs.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Nome</td>
+      <td>name</td>
+      <td>Texto</td>
+      <td>Título da publicação.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Descrição</td>
+      <td>description</td>
+      <td>Texto</td>
+      <td>Descrição curta da publicação para aparecer em cards.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Imagem de Capa</td>
+      <td>image</td>
+      <td>[Mídia](/collections/media)</td>
+      <td>Imagem de capa da publicação para exibição no site.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Orientação da Imagem</td>
+      <td>imageOrientation</td>
+      <td>'portrait' | 'landscape'</td>
+      <td>
+        Orientação dat imagem usada para capa do post, irá definir o layout.
+      </td>
+    </tr>
+    <tr>
+      <td className="font-bold">Autoria</td>
+      <td>author</td>
+      <td>[Pessoas](/collections/persons)</td>
+      <td>Autora do post.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Conteúdo</td>
+      <td>content</td>
+      <td>[Blocos](/blocks/overview)</td>
+      <td>Descrição mais detalhada da publicação.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Tags</td>
+      <td>tags</td>
+      <td>[Termos Definidos: tags](/collections/definedterms)</td>
+      <td>
+        Tags associadas ao post. Isso servirá para agregar conteúdos e criar
+        listas em páginas.
+      </td>
+    </tr>
+  </table>
+</div>

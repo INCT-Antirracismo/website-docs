@@ -1,0 +1,68 @@
+---
+title: Imagens
+description: Imagens diversos.
+---
+
+Coleção para upload de imagens do INCT.
+
+## AWS S3?
+
+[+] Adicionar aqui informações sobre o storage. Ou, melhor, criar uma página para isso.
+
+## Campos
+
+<p className="text-xs">Última atualização: 15/01/2025.</p>
+
+<div>
+  <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
+    <tr className="bg-accent-100">
+      <th>Nome do campo</th>
+      <th>Slug</th>
+      <th>Tipo</th>
+      <th>Descrição</th>
+    </tr>
+    <tr>
+      <td className="font-bold">Legenda (ALT)</td>
+      <td>alt</td>
+      <td>Texto</td>
+      <td>Coloque o nome da foto e/ou uma descrição curta.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Créditos</td>
+      <td>author</td>
+      <td>Texto</td>
+      <td>Coloque a fonte da imagem.</td>
+    </tr>
+  </table>
+</div>
+
+## Configuração
+
+````json
+  upload: {
+    staticDir: 'media',
+    imageSizes: [
+      {
+        name: 'thumbnail',
+        width: 400,
+        height: 300,
+        position: 'centre'
+      },
+      {
+        name: 'card',
+        width: 768,
+        height: 1024,
+        position: 'centre'
+      },
+      {
+        name: 'tablet',
+        width: 1024,
+        height: undefined,
+        position: 'centre'
+      }
+    ],
+    adminThumbnail: 'thumbnail',
+    mimeTypes: ['image/*']
+  },
+```json
+````
