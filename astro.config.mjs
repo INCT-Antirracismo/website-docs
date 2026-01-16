@@ -40,12 +40,12 @@ export default defineConfig({
               label: 'Website',
               items: [
                 { label: 'Páginas', slug: 'collections/pages' },
-                { label: 'Posts', slug: 'collections/posts' },
+                { label: 'Novidades (Posts)', slug: 'collections/posts' },
                 { label: 'Eventos', slug: 'collections/events' }
               ]
             },
             {
-              label: 'Arquivos',
+              label: 'Arquivos e configurações',
               items: [
                 {
                   label: 'Mídia',
@@ -54,11 +54,14 @@ export default defineConfig({
                 {
                   label: 'Arquivos',
                   slug: 'collections/files'
+                },
+
+                {
+                  label: 'Dicionário de Termos',
+                  slug: 'collections/definedterms'
                 }
               ]
-            },
-
-            { label: 'Dicionário de Termos', slug: 'collections/definedterms' }
+            }
           ]
         }
       ],
