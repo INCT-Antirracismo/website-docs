@@ -12,7 +12,7 @@ export default defineConfig({
         {
           icon: 'github',
           label: 'GitHub',
-          href: 'https://github.com/withastro/starlight'
+          href: 'https://github.com/INCT-Antirracismo'
         }
       ],
       sidebar: [
@@ -62,6 +62,15 @@ export default defineConfig({
                 }
               ]
             }
+          ]
+        },
+        {
+          label: 'Blocos',
+          items: [
+            { label: 'Resumo', slug: 'blocks/overview' },
+            { label: 'Call-To-Action Padrão', slug: 'blocks/default-cta' },
+            { label: 'Editor de Texto', slug: 'blocks/rich-text' },
+            { label: 'Lista de Conteúdo', slug: 'blocks/content-list' }
           ]
         }
       ],

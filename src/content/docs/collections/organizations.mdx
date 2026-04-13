@@ -5,17 +5,15 @@ description: Organizações que por qualquer motivo precisem ser listadas no sit
 
 Organizações que por qualquer motivo precisem ser listadas no site. Grupos de pesquisa, Universidades, Departamentos, Órgãos de Fomento, Programas de Pós-graduação...
 
+São usadas para serem relacionadas em páginas de pesquisadores e grupos de pesquisa. Também para a exibição de logotipos na página inicial do site.
+
 ## URLs
 
-A princípio, as organizações não vão ter URL própria no site do INCT.
-
-~As organizações têm em sua url o texto `/organizacoes`, seguido da `slug` da organização.:~
-
-~`enderecodosite.com.br/organizacoes/[slug]`~
+As organizações não têm página própria no site do INCT.
 
 ## Campos
 
-<p className="text-xs">Última atualização: 14/01/2025.</p>
+<p className="text-xs">Última atualização: 07/04/2025.</p>
 
 <div>
   <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
@@ -60,20 +58,13 @@ A princípio, as organizações não vão ter URL própria no site do INCT.
       <td className="font-bold">Tipo de organização</td>
       <td>type</td>
       <td>[Termos Definidos: organizationType](/collections/definedterms)</td>
-      <td>
-        Do que se trata essa organização? Valores como: Universidade ou
-        Faculdade, Departamento, Programa de Pós-Graduação, etc.
-      </td>
+      <td>Do que se trata essa organização?</td>
     </tr>
     <tr>
       <td className="font-bold">Logo</td>
       <td>logo</td>
       <td>[Documento de Mídia](/collections/media)</td>
-      <td>
-        Logo da instituição. Referência a um documento do tipo
-        [Mídia](/collections/media). Sempre arquivos .png sem fundo ou então
-        versões com fundo branco.
-      </td>
+      <td>Sempre arquivos .png sem fundo ou então versões com fundo branco.</td>
     </tr>
     <tr>
       <td className="font-bold">Site / Link</td>
@@ -102,7 +93,7 @@ A princípio, as organizações não vão ter URL própria no site do INCT.
       <td>geo</td>
       <td>Point</td>
       <td>
-        Latitude a longitude. Há um mapa e busca do Google Places para ajudar.
+        Latitude e longitude. Há um mapa e busca do Google Places para ajudar.
       </td>
     </tr>
   </table>

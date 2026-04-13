@@ -7,13 +7,13 @@ Produção acadêmica. Artigos, monografias, teses, livros, etc...
 
 ## URLs
 
-As publicações tem em sua url o texto `/publicacoes`, seguido da data de publicação em formato YYYY-MM, seguido da `slug` da publicação.:
+`https://www.inctantirracismo.com.br/pt-BR/publicacoes`
 
-`enderecodosite.com.br/publicacoes/YYYY-MM/[slug]`
+`https://www.inctantirracismo.com.br/pt-BR/publicacoes/[SLUG]`
 
 ## Campos
 
-<p className="text-xs">Última atualização: 14/01/2025.</p>
+<p className="text-xs">Última atualização: 07/04/2025.</p>
 
 <div>
   <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
@@ -22,6 +22,12 @@ As publicações tem em sua url o texto `/publicacoes`, seguido da data de publi
       <th>Slug</th>
       <th>Tipo</th>
       <th>Descrição</th>
+    </tr>
+    <tr>
+      <td className="font-bold">Nome</td>
+      <td>name</td>
+      <td>Texto</td>
+      <td>Título da publicação.</td>
     </tr>
     <tr>
       <td className="font-bold">Slug</td>
@@ -34,16 +40,16 @@ As publicações tem em sua url o texto `/publicacoes`, seguido da data de publi
       </td>
     </tr>
     <tr>
-      <td className="font-bold">Nome</td>
-      <td>name</td>
-      <td>Texto</td>
-      <td>Título da publicação.</td>
-    </tr>
-    <tr>
       <td className="font-bold">Descrição</td>
       <td>description</td>
       <td>Texto</td>
       <td>Descrição curta da publicação para aparecer em cards.</td>
+    </tr>
+    <tr>
+      <td className="font-bold">Citação</td>
+      <td>citation</td>
+      <td>Texto longo</td>
+      <td>Referência bibliográfica ou forma de citação da publicação.</td>
     </tr>
     <tr>
       <td className="font-bold">Tipo de Publicação</td>
@@ -72,32 +78,22 @@ As publicações tem em sua url o texto `/publicacoes`, seguido da data de publi
     <tr>
       <td className="font-bold">Arquivos</td>
       <td>files</td>
-      <td>[Arquivo](/collections/files)</td>
-      <td>Arquivos da publicação.</td>
+      <td>{`{ file: [Arquivo](/collections/files) }[]`}</td>
+      <td>Lista de arquivos anexados à publicação.</td>
     </tr>
     <tr>
       <td className="font-bold">Autorias (INCT)</td>
       <td>author</td>
-      <td>\{ relationType: Texto, relationTo: [Pessoas](/collections/persons) }[]</td>
+      <td>{`{ relationType: [Termos Definidos: occupation](/collections/definedterms)[], relationTo: [Pessoas](/collections/persons) }[]`}</td>
       <td>
         Pessoas do INCT, com cadastro no site, que trabalharam nesta publicação.
       </td>
     </tr>
     <tr>
-      <td className="font-bold">Demais Autorias</td>
+      <td className="font-bold">Demais autores</td>
       <td>creditText</td>
-      <td>Texto</td>
-      <td>
-        Demais autorias da publicação.
-      </td>
-    </tr>
-    <tr>
-      <td className="font-bold">Outras Informações</td>
-      <td>body</td>
-      <td>RichText</td>
-      <td>
-        Descrição mais detalhada da publicação.
-      </td>
+      <td>Texto longo</td>
+      <td>Demais autorias da publicação.</td>
     </tr>
   </table>
 </div>

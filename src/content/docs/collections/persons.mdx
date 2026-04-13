@@ -7,14 +7,13 @@ Pessoas que façam parte da caminhada do INCT Antirracismo e/ou precisem aparece
 
 ## URLs
 
-As pessoas têm em sua url o texto `/pessoas`, seguido da `slug` da pessoa:
+`https://www.inctantirracismo.com.br/pt-BR/pesquisadores`
 
-`enderecodosite.com.br/pessoas/[slug]`
+`https://www.inctantirracismo.com.br/pt-BR/pesquisadores/[SLUG]`
 
 ## Campos
 
-<p className="text-xs">Última atualização: 13/01/2025.</p>
-
+<p className="text-xs">Última atualização: 07/04/2025.</p>
 <div>
   <table className="[&_td]:p-1.5 [&_th]:p-1.5 [&_td]:first:p-2.5 [&_th]:first:p-2.5">
     <tr className="bg-accent-100">
@@ -27,7 +26,7 @@ As pessoas têm em sua url o texto `/pessoas`, seguido da `slug` da pessoa:
       <td className="font-bold">Nome</td>
       <td>name</td>
       <td>Texto</td>
-      <td>Nome da pessoa.</td>
+      <td>Nome completo da pessoa.</td>
     </tr>
     <tr>
       <td className="font-bold">Slug</td>
@@ -41,7 +40,7 @@ As pessoas têm em sua url o texto `/pessoas`, seguido da `slug` da pessoa:
     </tr>
     <tr>
       <td className="font-bold">Pronomes</td>
-      <td>pronoums</td>
+      <td>pronouns</td>
       <td>Enum: 'Masculino', 'Feminino', 'Neutro'</td>
       <td>
         Pronome de tratamento preferido pela pessoa. Pode ser usado para adequar
@@ -83,21 +82,21 @@ As pessoas têm em sua url o texto `/pessoas`, seguido da `slug` da pessoa:
       <td>socialMedia</td>
       <td>Array</td>
       <td>
-        Contas da pessoa em Redes Sociais, que ela queira tornar pública no site
-        do INCT.
+        Contas da pessoa em redes sociais, que ela queira tornar públicas no
+        site do INCT.
       </td>
     </tr>
     <tr>
       <td className="font-bold">Redes Sociais: URL</td>
-      <td>socialMedia. url</td>
+      <td>socialMedia.url</td>
       <td>Texto</td>
       <td>Link para a página da conta na rede social.</td>
     </tr>
     <tr>
       <td className="font-bold">Redes Sociais: Rede</td>
-      <td>socialMedia. type</td>
+      <td>socialMedia.type</td>
       <td>Select (Texto)</td>
-      <td>Qual a rede social? Instagram, Facebook, Linkedin, etc...</td>
+      <td>Qual a rede social? Instagram, Facebook, LinkedIn etc.</td>
     </tr>
     <tr>
       <td className="font-bold">Sobre</td>
@@ -111,7 +110,7 @@ As pessoas têm em sua url o texto `/pessoas`, seguido da `slug` da pessoa:
     <tr>
       <td className="font-bold">Vínculos com o INCT Antirracismo</td>
       <td>inctPosition</td>
-      <td>[Termos Definidos: occupation](/collections/definedterms)</td>
+      <td>[Termos Definidos: occupation](/collections/definedterms)[]</td>
       <td>
         Qual a posição dentro da estrutura deste INCT? Admite mais de um valor.
       </td>
@@ -119,7 +118,7 @@ As pessoas têm em sua url o texto `/pessoas`, seguido da `slug` da pessoa:
     <tr>
       <td className="font-bold">Núcleo no INCT</td>
       <td>inctGroup</td>
-      <td>[Termos Definidos: inctGroup](/collections/definedterms)</td>
+      <td>[Termos Definidos: inctGroup](/collections/definedterms)[]</td>
       <td>
         A quais núcleos do INCT essa pessoa pertence. Admite mais de um valor.
       </td>
@@ -132,16 +131,16 @@ As pessoas têm em sua url o texto `/pessoas`, seguido da `slug` da pessoa:
     </tr>
     <tr>
       <td className="font-bold">Projetos de Pesquisa: Vínculo</td>
-      <td>researchProjects. relationType</td>
-      <td>[Termos Definidos: occupation](/collections/definedterms)</td>
+      <td>researchProjects.relationType</td>
+      <td>[Termos Definidos: occupation](/collections/definedterms)[]</td>
       <td>
         Qual o vínculo da pessoa com o projeto de pesquisa? Pode ter mais de um
         valor.
       </td>
     </tr>
     <tr>
-      <td className="font-bold">Projetos de Pesquisa: Projeto de Pesquisa</td>
-      <td>researchProjects. researchProject</td>
+      <td className="font-bold">Projetos de Pesquisa: Projeto</td>
+      <td>researchProjects.researchProject</td>
       <td>[Projeto de Pesquisa](/collections/researchprojects)</td>
       <td>
         Referência ao documento do [Projeto de
@@ -158,16 +157,14 @@ As pessoas têm em sua url o texto `/pessoas`, seguido da `slug` da pessoa:
       </td>
     </tr>
     <tr>
-      <td className="font-bold">Vínculos com outras instituições: Vínculo</td>
-      <td>memberOf. relationType</td>
-      <td>[Termos Definidos: occupation](/collections/definedterms)</td>
+      <td className="font-bold">Vínculos: Vínculo</td>
+      <td>memberOf.relationType</td>
+      <td>[Termos Definidos: occupation](/collections/definedterms)[]</td>
       <td>Natureza do vínculo. Admite mais de um valor.</td>
     </tr>
     <tr>
-      <td className="font-bold">
-        Vínculos com outras instituições: Organização
-      </td>
-      <td>memberOf. researchProject</td>
+      <td className="font-bold">Vínculos: Organização</td>
+      <td>memberOf.organization</td>
       <td>[Organização](/collections/organizations)</td>
       <td>
         Referência a um documento de [Organização](/collections/organizations)
